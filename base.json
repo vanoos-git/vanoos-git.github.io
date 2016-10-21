@@ -1,0 +1,44 @@
+{
+  "flexblocks": [
+    {
+      "url": "images/pic1.jpeg",
+      "text1": "project one",
+      "text2": "Web design"
+    },
+    {
+      "url": "images/pic2.jpeg",
+      "text1": "project two",
+      "text2": "Logo"
+    },
+    {
+      "url": "images/pic3.jpeg",
+      "text1": "project three",
+      "text2": "Photo"
+    },
+    {
+      "url": "images/pic4.jpeg",
+      "text1": "project one",
+      "text2": "Web design"
+    },
+    {
+      "url": "images/pic5.jpeg",
+      "text1": "project one",
+      "text2": "Web design"
+    },
+    {
+      "url": "images/pic6.jpeg",
+      "text1": "project three",
+      "text2": "Web design"
+    },
+    {
+      "url": "http://www.desktopimages.org/pictures/2014/0331/1/mountains-nature-cars-ford-mustang-stripes-yellow-cars-muscle-car-boss-302-mustang-boss-images-227484.jpg",
+      "text1": "project three",
+      "text2": "Photo"
+    },
+    {
+      "url": "http://www.greenprophet.com/wp-content/uploads/2011/06/car-nature.jpg",
+      "text1": "project three",
+      "text2": "Photo"
+    }
+  ]
+}
