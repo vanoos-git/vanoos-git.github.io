@@ -265,16 +265,18 @@ input {
 }
 
 input.txt1 {
-    width: 43%;
+    width: 45%;
+    padding: 1%;
 }
 
 input.txt {
-    width: 94%;
+    width: 93%;
+    padding: 1%;
 }
 
 textarea {
     border: 0;
-    width: 94%;
+    width: 93%;
     padding: 1%;
     min-height: 100px;
 }
