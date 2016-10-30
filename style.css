@@ -283,7 +283,6 @@ textarea {
 }
 
 bc {
-	background-image: url(images/road.jpeg);
-	width: 400px;
-	height: 400px;
+  width: 400px;
+  height: 400px;
 }
