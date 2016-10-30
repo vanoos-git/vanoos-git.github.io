@@ -281,3 +281,7 @@ textarea {
     padding: 15px;
     min-height: 100px;
 }
+
+bc {
+	background-image: url(images/road.jpeg);
+}
