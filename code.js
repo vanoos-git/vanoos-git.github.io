@@ -15,8 +15,8 @@ var arrange = function(data) {
         console.log(item.url);
           btext.innerHTML = item.text1;
         btext2.innerHTML = item.text2;
-        bc.style.backgroundImage='url(+item.url+)';
-    //    bc.appendChild(bimg);
+        bc.style.backgroundImage='url('+item.url+')';
+    // 	   bc.appendChild(bimg);
         block.appendChild(bc);
         block.appendChild(btext);
         block.appendChild(btext2);
