@@ -10,7 +10,7 @@ var arrange = function(data) {
         btext.className = "fcaption";
         btext2.className = "fcaption2";
         bimg.className = "cimg";
-        bc.className = "bc";
+        bc.className = "img.bc";
         var urlString = 'url(images/' + 'pic1' + '.jpeg)';
         console.log(item.url);
           btext.innerHTML = item.text1;
