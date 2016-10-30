@@ -13,8 +13,7 @@ var arrange = function(data) {
         bc.className = "bc";
         bc.background = item.url;
         console.log(item.url);
-        bimg.src = item.url;
-        btext.innerHTML = item.text1;
+          btext.innerHTML = item.text1;
         btext2.innerHTML = item.text2;
         bc.style.backgroundImage='url(+item.url+)';
     //    bc.appendChild(bimg);
