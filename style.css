@@ -282,7 +282,7 @@ textarea {
     min-height: 100px;
 }
 
-img.bc {
+.bc {
   width: 400px;
   height: 400px;
       background-image: url(images/road.jpeg);

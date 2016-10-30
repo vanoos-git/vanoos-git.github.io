@@ -5,18 +5,15 @@ var arrange = function(data) {
       var btext = document.createElement("div");
       var btext2 = document.createElement("div");
       var bc = document.createElement("div")
-      var bimg = document.createElement("img");
         block.className = "fimg";
         btext.className = "fcaption";
         btext2.className = "fcaption2";
-        bimg.className = "cimg";
-        bc.className = "img.bc";
+        bc.className = ".bc";
         var urlString = 'url(images/' + item.url + '.jpeg)';
         console.log(item.url);
-          btext.innerHTML = item.text1;
+        btext.innerHTML = item.text1;
         btext2.innerHTML = item.text2;
         bc.style.backgroundImage=urlString;
-     bc.appendChild(bimg);
         block.appendChild(bc);
         block.appendChild(btext);
         block.appendChild(btext2);
