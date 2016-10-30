@@ -11,7 +11,7 @@ var arrange = function(data) {
         btext2.className = "fcaption2";
         bimg.className = "cimg";
         bc.className = "bc";
-        bc.background = item.url;
+        //bc.background = item.url;
         console.log(item.url);
           btext.innerHTML = item.text1;
         btext2.innerHTML = item.text2;
