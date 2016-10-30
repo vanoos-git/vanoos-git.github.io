@@ -8,7 +8,7 @@ var arrange = function(data) {
         block.className = "fimg";
         btext.className = "fcaption";
         btext2.className = "fcaption2";
-        bc.className = ".bc";
+        bc.className = "bc";
         var urlString = 'url(images/' + item.url + '.jpeg)';
         console.log(item.url);
         btext.innerHTML = item.text1;
