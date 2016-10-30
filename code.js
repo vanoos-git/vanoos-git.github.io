@@ -11,12 +11,12 @@ var arrange = function(data) {
         btext2.className = "fcaption2";
         bimg.className = "cimg";
         bc.className = "bc";
-        //bc.background = item.url;
+        var urlString = 'url(images/' + 'pic1' + '.jpeg)';
         console.log(item.url);
           btext.innerHTML = item.text1;
         btext2.innerHTML = item.text2;
-      //  bc.style.backgroundImage="url("+item.url+")";
-    //  bc.appendChild(bimg);
+        bc.style.backgroundImage=urlString;
+     bc.appendChild(bimg);
         block.appendChild(bc);
         block.appendChild(btext);
         block.appendChild(btext2);
