@@ -148,7 +148,7 @@ img.chsize {
 
 .cblock {
     max-width: 571px;
-    max-height: 391px;
+    height: 65%;
   margin: 1%;
 }
 
