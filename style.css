@@ -60,7 +60,7 @@ img.chsize {
     padding: 20px 35px 20px 35px;
     background-color: #39c9da;
     border-radius: 5px;
-    max-width: 200px;
+    width: 15%;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
@@ -79,7 +79,7 @@ img.chsize {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 504px;
+    width: 35%;
     max-height: 69px;
     padding-top: 260px;
     padding-bottom: 40px;
@@ -159,7 +159,7 @@ img.chsize {
 }
 
 .fblock {
-    max-width: 272px;
+    width: 15%;
     max-height: 299px;
     margin-left: 1%;
     margin-right: 1%;
@@ -202,7 +202,7 @@ a.fbutton {
 }
 
 .fimg {
-    width: 370px;
+    width: 20%;
     height: 300px;
     margin-top: 40px;
     margin-bottom: 80px;
