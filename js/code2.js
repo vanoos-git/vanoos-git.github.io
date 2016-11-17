@@ -3,7 +3,6 @@ var arr = function(data) {
     $('.services').append(template(data));
 };
 
-
 var jqxhr = $.getJSON("base2.json", function() {
         console.log("success");
     })
