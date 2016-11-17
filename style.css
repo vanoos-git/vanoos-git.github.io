@@ -184,7 +184,7 @@ img.chsize {
     text-align: center;
 }
 
-a.fbutton {
+button.fbutton {
     margin: 30px auto;
     max-width: 130px;
     max-height: 35px;
