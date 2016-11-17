@@ -4,17 +4,17 @@ var arr = function(data) {
 };
 
 
-var rq = new XMLHttpRequest();
-rq.open('GET', 'base2.json', true);
+var jqxhr = $.getJSON( "base2.json", function() {
 
-rq.onload = function() {
-    if (rq.status == 200) {
-        var data = JSON.parse(rq.responseText);
-        arr(data);
-    } else {
-        console.log("error")
-    }
-};
-rq.onerror = function() {
-    // There was a connection error of some sort
-};
+  .done(function() {
+    function(data) {
+        var template = Handlebars.compile($('#template').html());
+        $('.services').append(template(data));
+    };
+  })
+  .fail(function() {
+    console.log( "Base2.json error" );
+  })
+  .always(function() {
+    console.log( "Base2.json complete" );
+  });
