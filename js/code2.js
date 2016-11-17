@@ -3,13 +3,11 @@ var arr = function(data) {
     $('.services').append(template(data));
 };
 
-var jqxhr = $.getJSON("base2.json", function() {
-        console.log("success");
-    })
+var jqxhr = $.getJSON("base2.json")
     .done(function(data) {
-            var template = Handlebars.compile($('#template').html());
-            $('.services').append(template(data));
-        });
+        var template = Handlebars.compile($('#template').html());
+        $('.services').append(template(data));
+    })
     .fail(function() {
         console.log("Base2.json error");
     })
