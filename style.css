@@ -11,16 +11,13 @@
 }
 
 
-
-
-
 html {
     margin: 0 auto;
 }
 
 body {
     margin: 0;
-    font-family: "Open Sans";
+  font-family: 'Open Sans', Fallback, sans-serif;
 }
 
 footer {
