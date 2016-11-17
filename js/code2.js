@@ -1,22 +1,22 @@
-var arrange = function(data) {
+var arr = function(data) {
     var template = Handlebars.compile($('#template').html());
     $('.services').append(template(data));
 };
 
 
-var request = new XMLHttpRequest();
-request.open('GET', 'base2.json', true);
+var rq = new XMLHttpRequest();
+rq.open('GET', 'base2.json', true);
 
-request.onload = function() {
-    if (request.status == 200) {
-        var data = JSON.parse(request.responseText);
-        arrange(data);
+rq.onload = function() {
+    if (rq.status == 200) {
+        var data = JSON.parse(rq.responseText);
+        arr(data);
     } else {
         console.log("error")
     }
 };
-request.onerror = function() {
+rq.onerror = function() {
     // There was a connection error of some sort
 };
 
-request.send();
+rq.send();
