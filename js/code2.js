@@ -11,15 +11,10 @@ var jqxhr = $.getJSON("base2.json")
     });
 
 Handlebars.registerHelper('information', function(items, options) {
-      var out = "<ul>";
-
-      for(var i=0, l=items.length; i<l; i++) {
+    return out = "<div>" + ;
+    for (var i = 0, l = items.length; i < l; i++) {
         out = out + "<li>" + options.fn(items[i]) + "</li>";
-      }
+    }
 
-      return out + "</ul>";
-    });
-
-function show() {
-  this.
-}
+    return out + "</ul>";
+});
