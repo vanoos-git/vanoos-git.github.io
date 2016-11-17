@@ -9,12 +9,3 @@ var jqxhr = $.getJSON("base2.json")
     .always(function() {
         console.log("Base2.json complete");
     });
-
-Handlebars.registerHelper('information', function(items, options) {
-    return out = "<div>" + ;
-    for (var i = 0, l = items.length; i < l; i++) {
-        out = out + "<li>" + options.fn(items[i]) + "</li>";
-    }
-
-    return out + "</ul>";
-});
