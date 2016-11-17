@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>UIBrush.</title>
-    </head>
+</head>
 
 <body>
     <header>
@@ -22,7 +23,7 @@
         <div class="htext">
             <h1>THE ULTIMATE COLLECTION OF  FREE PSD TEMPLATES!!</h1>
         </div><br>
-          <a href="#" class="button">download</a>
+        <a href="#" class="button">download</a>
     </header>
 
     <div class="aboutus">
@@ -57,30 +58,16 @@
         <h3>services</h3>
         <p>Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam non #5</p>
         <div class="my-flex-container">
-            <div class="fblock">
-                <img class="img" alt="photograpy" src="images/ser1.png" />
-                <div class="caption">photography</div>
-                <div class="ftext">Sometext about picture</div>
-                <a href="#" class="fbutton">Read More</a>
-            </div>
-            <div class="fblock">
-                <img class="img" alt="Painting" src="images/ser1.png" />
-                <div class="caption">Painting</div>
-                <div class="ftext">Sometext about picture</div>
-                <a href="#" class="fbutton">Read More</a>
-            </div>
-            <div class="fblock">
-                <img class="img" alt="video editing" src="images/ser1.png" />
-                <div class="caption">video editing</div>
-                <div class="ftext">Sometext about picture</div>
-                <a href="#" class="fbutton">Read More</a>
-            </div>
-            <div class="fblock">
-                <img class="img" alt="web design" src="images/ser1.png" />
-                <div class="caption">web design</div>
-                <div class="ftext">Sometext about picture</div>
-                <a href="#" class="fbutton">Read More</a>
-            </div>
+            <script id="template" type="text/x-handlebars-template">
+                {{#each services}}
+                <div class="fblock">
+                    <img class="img" alt="photograpy" src={{src}} />
+                    <div class="caption">{{caption}}</div>
+                    <div class="ftext">{{ftext}}</div>
+                    <a href="#" class="fbutton">Read More</a>
+                </div>
+                {{/each}}
+            </script>
         </div>
     </div>
     <div class="container">
@@ -101,11 +88,11 @@
                 </div>
                 <div class="cblock">
                     <div class="row">
-                        <input class="txt1" type="text" placeholder="Name"/>
-                        <input class="txt1" type="text" placeholder="E-mail"/>
+                        <input class="txt1" type="text" placeholder="Name" />
+                        <input class="txt1" type="text" placeholder="E-mail" />
                     </div>
                     <div class="row">
-                        <input class="txt" type="text" placeholder="Subject"/>
+                        <input class="txt" type="text" placeholder="Subject" />
                     </div>
                     <div class="row">
                         <textarea class="txt" placeholder="Message"></textarea>
@@ -115,7 +102,10 @@
             </div>
         </div>
     </div>
-    <script src="code.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script src="js/code.js"></script>
+
     <footer>Copyright © 2014 UIBrush.</footer>
 </body>
+
 </html>

@@ -1,0 +1,9 @@
+{
+  "services": [
+    {
+      "caption": "photography",
+      "src": "images/ser1.png",
+      "ftext": "Sometext about picture"
+    }
+  ]
+}
