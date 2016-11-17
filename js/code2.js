@@ -18,5 +18,3 @@ rq.onload = function() {
 rq.onerror = function() {
     // There was a connection error of some sort
 };
-
-rq.send();
