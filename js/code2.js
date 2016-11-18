@@ -9,3 +9,5 @@ var jqxhr = $.getJSON("base2.json")
     .always(function() {
         console.log("Base2.json complete");
     });
+
+$('button#info').click( function(event){ // 

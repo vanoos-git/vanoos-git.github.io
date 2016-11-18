@@ -4,7 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+    <script async src="js/loadCSS.js"></script>
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    <script id="loadcss">
+        loadCSS("style.css", document.getElementById("loadcss"));
+    </script>
     <script defer src="js/jquery-3.1.1.min.js"></script>
     <script defer src="js/handlebars-v4.0.5.js"></script>
     <title>UIBrush.</title>
@@ -65,8 +70,9 @@
                     <img class="img" alt="photograpy" src={{src}} />
                     <div class="caption">{{caption}}</div>
                     <div class="ftext">{{ftext}}</div>
-                    <button onclick="show" class="fbutton">Read More</button>
+                    <button id="info" class="fbutton">Read More</button>
                 </div>
+                <div display="none">{{info}}</div>
                 {{/each}}
             </div>
         </script>
