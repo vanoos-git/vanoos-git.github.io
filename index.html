@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <title>UIBrush.</title>
 </head>
 
@@ -65,12 +65,10 @@
                     <img class="img" alt="photograpy" src={{src}} />
                     <div class="caption">{{caption}}</div>
                     <div class="ftext">{{ftext}}</div>
-                    <button onclick="show"class="fbutton">Read More</button>
+                    <button onclick="show" class="fbutton">Read More</button>
                 </div>
                 {{/each}}
             </div>
-
-      {{#information services}} {{info}} {{/information}}
         </script>
     </div>
     <div class="container">
