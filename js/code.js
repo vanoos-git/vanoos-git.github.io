@@ -21,7 +21,7 @@ var arrange = function(data) {
 }
 
 var request = new XMLHttpRequest();
-request.open('GET', 'base.json', true);
+request.open('GET', 'JSON/base.json', true);
 
 request.onload = function() {
     if (request.status == 200) {

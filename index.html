@@ -70,11 +70,20 @@
                     <img class="img" alt="photograpy" src={{src}} />
                     <div class="caption">{{caption}}</div>
                     <div class="ftext">{{ftext}}</div>
-                    <button id="info" class="fbutton">Read More</button>
+                    <button id="info" disabled data-num={{@index}} class="fbutton">Read More</button>
                 </div>
                 {{/each}}
             </div>
         </script>
+        <div class="b-popup" hidden="true">
+
+            <script id="ShowJson" type="text/x-handlebars-template">
+                <div class="b-popup-content">
+                    {{info}}
+                </div>
+            </script>
+
+        </div>
     </div>
     <div class="container">
         <div class="contactus">

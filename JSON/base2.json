@@ -1,0 +1,24 @@
+{
+  "services": [
+    {
+      "caption": "photography",
+      "src": "images/ser1.png",
+      "ftext": "Sometext about picture"
+    },
+    {
+      "caption": "Painting",
+      "src": "images/ser2.png",
+      "ftext": "Sometext about picture"
+    },
+    {
+      "caption": "video editing",
+      "src": "images/ser3.png",
+      "ftext": "Sometext about picture"
+    },
+    {
+      "caption": "web design",
+      "src": "images/ser4.png",
+      "ftext": "Sometext about picture"
+    }
+  ]
+}
