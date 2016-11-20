@@ -26,7 +26,7 @@ function getjson(json, pfunc, template, mclass) {
 
 $(document).ready(function() {
     $('.b-popup').click(function() {
-        $('.b-popup').fadeOut(500);
+        $('.b-popup').fadeOut(300);
     });
     var Second = function() {
         $('button.fbutton').prop("disabled", false).click(function() {
@@ -35,7 +35,7 @@ $(document).ready(function() {
                 $('.b-popup-content').remove();
                 getjson("JSON/" + caller.data("num") + ".json", HBcompile, "#ShowJson", ".b-popup").done(function() {
                     if (ERR === 0) {
-                        $('.b-popup').fadeIn(500);
+                        $('.b-popup').fadeIn(300);
                     }
                 });
             });
