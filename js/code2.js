@@ -26,7 +26,7 @@ function getjson(json, pfunc, template, mclass) {
 
 $(document).ready(function() {
     $('.b-popup').click(function() {
-      $('.b-popup').fadeOut(300);
+      $('.b-popup').fadeOut(500);
       $('.b-popup-content').remove();
     });
     var Second = function() {
