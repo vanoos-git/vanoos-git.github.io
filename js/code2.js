@@ -33,8 +33,6 @@ $(document).ready(function() {
             $('.b-popup-content:').remove();
             getjson("JSON/" + $(this).data("num") + ".json", HBcompile, "#ShowJson", ".b-popup").done(function() {
                 
-                }
-
             });
         });
     }
