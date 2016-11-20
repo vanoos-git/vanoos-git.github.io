@@ -62,7 +62,14 @@
     <div class="services">
         <h3>services</h3>
         <p>Lorem ipsum dolor sit amet tetuer adipiscing elit, sed diam non #5</p>
+        <div class="b-popup">
+            <script id="ShowJson" type="text/x-handlebars-template">
+                <div class="b-popup-content">
+                    {{info}}
+                </div>
+            </script>
 
+        </div>
         <script id="template" type="text/x-handlebars-template">
             <div class="my-flex-container">
                 {{#each services}}
@@ -75,14 +82,7 @@
                 {{/each}}
             </div>
         </script>
-        <div class="b-popup">
-            <script id="ShowJson" type="text/x-handlebars-template">
-                <div class="b-popup-content">
-                    {{info}}
-                </div>
-            </script>
 
-        </div>
     </div>
     <div class="container">
         <div class="contactus">
