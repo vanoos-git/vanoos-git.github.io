@@ -27,7 +27,6 @@ function getjson(json, pfunc, template, mclass) {
 $(document).ready(function() {
     $('.b-popup').click(function() {
       $('.b-popup').fadeOut(500);
-      $('.b-popup-content').remove();
     });
     var Second = function() {
         $('button.fbutton').prop("disabled", false).click(function() {
