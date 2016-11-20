@@ -210,15 +210,14 @@ button:disabled {
     background-color: rgba(0,0,0,0.5);
     overflow:hidden;
     position: fixed;
-    display: block;
     top:0px;
 }
 .b-popup .b-popup-content{
+    margin:2% auto 0px auto;
     width: 80%;
     height: 40%;
-    background-color: #c5c5c5;
+    padding:1%;
     border-radius:5px;
-
 }
 
 .fimg {
