@@ -32,7 +32,10 @@ $(document).ready(function() {
         $('button.fbutton').prop("disabled", false).click(function() {
             $('.b-popup-content:').remove();
             getjson("JSON/" + $(this).data("num") + ".json", HBcompile, "#ShowJson", ".b-popup").done(function() {
-                
+                if (ERR === 0) {
+                    $('.b-popup').fadeIn(300);
+                }
+
             });
         });
     }
