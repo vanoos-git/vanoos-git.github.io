@@ -26,16 +26,16 @@ function getjson(json, pfunc, template, mclass) {
 
 $(document).ready(function() {
     $('.b-popup').click(function() {
-        $('.b-popup').fadeOut(300);
+        $('.b-popup').fadeOut(200);
     });
     var Second = function() {
         $('button.fbutton').prop("disabled", false).click(function() {
           var caller= $(this);
-            $('.b-popup').fadeOut('slow', function() {
+            $('.b-popup').fadeOut(200 function() {
                 $('.b-popup-content').remove();
                 getjson("JSON/" + caller.data("num") + ".json", HBcompile, "#ShowJson", ".b-popup").done(function() {
                     if (ERR === 0) {
-                        $('.b-popup').fadeIn(300);
+                        $('.b-popup').fadeIn(200);
                     }
                 });
             });
