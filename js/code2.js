@@ -33,7 +33,7 @@ $(document).ready(function() {
             $('.b-popup-content:').remove();
             getjson("JSON/" + $(this).data("num") + ".json", HBcompile, "#ShowJson", ".b-popup").done(function() {
                 if (ERR === 0) {
-                    $('.b-popup').fadeIn(300);
+                  alert("VS");
                 }
 
             });
