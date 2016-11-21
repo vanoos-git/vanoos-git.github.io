@@ -206,12 +206,13 @@ button:disabled {
 
 .b-popup {
     border: 2px solid rgba(197, 192, 192, .7);
-    border-radius: 2px;
+    border-radius: 14px;
+    padding: 1%;
     height: 40%;
     left: 10%;
     right: 10%;
     position: fixed;
-    top: 50%;
+    top: 30%;
     z-index: 999;
     color: #fff;
     background-color: #39c9da;
