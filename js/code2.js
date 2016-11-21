@@ -43,16 +43,16 @@ $(document).ready(function() {
                         }
                     });
                 });
+            } else {
+                getjson("JSON/" + $(this).data("num") + ".json", HBcompile, "#ShowJson", ".services").done(function() {
+                    if (ERR === 0) {
+                        $('.b-popup').fadeIn(500);
+                        $('.b-popup').click(function() {
+                            $('.b-popup').fadeOut(500);
+                        });
+                    }
+                });
             }
-            getjson("JSON/" + $(this).data("num") + ".json", HBcompile, "#ShowJson", ".services").done(function() {
-                if (ERR === 0) {
-                    $('.b-popup').fadeIn(500);
-                    $('.b-popup').click(function() {
-                        $('.b-popup').fadeOut(500);
-                    });
-                }
-            });
-
         });
     }
     getjson("JSON/base2.json", HBcompile, "#template", ".services").done(Second);
