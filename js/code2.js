@@ -33,7 +33,7 @@ $(document).ready(function() {
           var caller= $(this);
             $('.b-popup').fadeOut(200, function() {
                 $('.b-popup-content').remove();
-                getjson("JSON/" + caller.data("num") + ".json", HBcompile, "#ShowJson", ".b-popup").done(function() {
+                getjson("JSON/" + caller.data("num") + ".json", HBcompile, "#ShowJson", ".services").done(function() {
                     if (ERR === 0) {
                         $('.b-popup').fadeIn(200);
                     }
