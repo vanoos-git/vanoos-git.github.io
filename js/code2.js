@@ -35,6 +35,7 @@ $(document).ready(function() {
                 getjson("JSON/" + caller.data("num") + ".json", HBcompile, "#ShowJson", ".services").done(function() {
                     if (ERR === 0) {
                         $('.b-popup').fadeIn(200);
+                        alert("VS");
                     }
                 });
             });
