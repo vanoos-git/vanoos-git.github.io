@@ -31,7 +31,7 @@ $(document).ready(function() {
     var Second = function() {
         $('button.fbutton').prop("disabled", false).click(function() {
             $('.b-popup').remove();
-            getjson("JSON/" + caller.data("num") + ".json", HBcompile, "#ShowJson", ".services").done(function() {
+            getjson("JSON/" + $(this).data("num") + ".json", HBcompile, "#ShowJson", ".services").done(function() {
                 if (ERR === 0) {
                     $('.b-popup').fadeIn(500);
                     $('.b-popup').click(function() {
