@@ -26,15 +26,17 @@ function getjson(json, pfunc, template, mclass) {
 
 $(document).ready(function() {
     $('.b-popup').click(function() {
-        $('.b-popup').fadeOut(200);
+        $('.b-popup').fadeOut(500);
     });
     var Second = function() {
         $('button.fbutton').prop("disabled", false).click(function() {
-            var caller = $(this);
+            $('.b-popup').remove();
             getjson("JSON/" + caller.data("num") + ".json", HBcompile, "#ShowJson", ".services").done(function() {
                 if (ERR === 0) {
-                    $('.b-popup').fadeIn(200);
-                    alert("VS");
+                    $('.b-popup').fadeIn(500);
+                    $('.b-popup').click(function() {
+                        $('.b-popup').fadeOut(500);
+                    });
                 }
             });
 
