@@ -205,12 +205,16 @@ button:disabled {
 }
 
 .b-popup {
-    margin: 2% auto 0px auto;
-    width: 80%;
-    height: 40%;
-    padding: 1%;
-    background-color: #f6f6f6;
-    border-radius: 5px;
+    background: url(../images/bg-popup.png) -5px -5px;
+    border: 5px solid rgba(197, 192, 192, .7);
+    border-radius: 10px;
+    height: 198px;
+    left: 50%;
+    margin: -99px 0 0 -172px;
+    position: absolute;
+    top: 50%;
+    width: 345px;
+    z-index: 999;
 }
 
 .fimg {
