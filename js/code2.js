@@ -31,7 +31,9 @@ $(document).ready(function() {
     var Second = function() {
         $('button.fbutton').prop("disabled", false).click(function() {
             if ($(".b-popup").length) {
-                $('.b-popup').fadeOut(500, $('.b-popup').remove());
+                $('.b-popup').fadeOut(500, function() {
+                    $('.b-popup').remove();
+                });
             }
             $('.b-popup').remove();
             getjson("JSON/" + $(this).data("num") + ".json", HBcompile, "#ShowJson", ".services").done(function() {
