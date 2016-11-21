@@ -28,11 +28,20 @@ $(document).ready(function() {
     $('.b-popup').click(function() {
         $('.b-popup').fadeOut(500);
     });
+
     var Second = function() {
         $('button.fbutton').prop("disabled", false).click(function() {
             if ($(".b-popup").length) {
                 $('.b-popup').fadeOut(500, function() {
                     $('.b-popup').remove();
+                    getjson("JSON/" + $(this).data("num") + ".json", HBcompile, "#ShowJson", ".services").done(function() {
+                        if (ERR === 0) {
+                            $('.b-popup').fadeIn(500);
+                            $('.b-popup').click(function() {
+                                $('.b-popup').fadeOut(500);
+                            });
+                        }
+                    });
                 });
             }
             getjson("JSON/" + $(this).data("num") + ".json", HBcompile, "#ShowJson", ".services").done(function() {
