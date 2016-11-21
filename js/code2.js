@@ -46,6 +46,5 @@ $(document).ready(function() {
             });
         });
     }
-});
-getjson("JSON/base2.json", HBcompile, "#template", ".services").done(Second);
+    getjson("JSON/base2.json", HBcompile, "#template", ".services").done(Second);
 });
