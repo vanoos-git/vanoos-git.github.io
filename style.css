@@ -204,22 +204,13 @@ button:disabled {
     color: #9ca1a8;
 }
 
-.b-popup{
-    display: none;
-    width:100%;
-    min-height:100%;
-    overflow:hidden;
-    position: relative;;
-    top:0px;
-}
-.b-popup .b-popup-content{
-    margin:2% auto 0px auto;
+.b-popup {
+    margin: 2% auto 0px auto;
     width: 80%;
     height: 40%;
-    padding:1%;
+    padding: 1%;
     background-color: #c5c5c5;
-    border-radius:5px;
-
+    border-radius: 5px;
 }
 
 .fimg {
