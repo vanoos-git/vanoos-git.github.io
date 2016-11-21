@@ -1,6 +1,6 @@
 function HBcompile(data, template, mclass) {
     var template = Handlebars.compile($(template).html());
-    $(mclass).append(template(data));
+    $(mclass).replaceWith(template(data));
 }
 var ERR = 0;
 
