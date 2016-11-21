@@ -35,7 +35,6 @@ $(document).ready(function() {
                     $('.b-popup').remove();
                 });
             }
-            $('.b-popup').remove();
             getjson("JSON/" + $(this).data("num") + ".json", HBcompile, "#ShowJson", ".services").done(function() {
                 if (ERR === 0) {
                     $('.b-popup').fadeIn(500);
