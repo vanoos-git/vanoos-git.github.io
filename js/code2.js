@@ -30,14 +30,12 @@ $(document).ready(function() {
     });
     var Second = function() {
         $('button.fbutton').prop("disabled", false).click(function() {
-          var caller= $(this);
-            $('.b-popup').fadeOut(200, function() {
-                getjson("JSON/" + caller.data("num") + ".json", HBcompile, "#ShowJson", ".services").done(function() {
-                    if (ERR === 0) {
-                        $('.b-popup').fadeIn(200);
-                        alert("VS");
-                    }
-                });
+            var caller = $(this);
+            getjson("JSON/" + caller.data("num") + ".json", HBcompile, "#ShowJson", ".services").done(function() {
+                if (ERR === 0) {
+                    $('.b-popup').fadeIn(200);
+                    alert("VS");
+                }
             });
 
         });
